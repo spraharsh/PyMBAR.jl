@@ -1,4 +1,8 @@
 using Pkg
+
+# use Conda.jl python distribution
+ENV["PYTHON"] = ""
+Pkg.build("PyCall")
 using PyMBAR
 using Test
 using Random, Distributions
@@ -6,8 +10,7 @@ using Random, Distributions
 timeseries = PyMBAR.pymbar.timeseries
 testsystems = PyMBAR.pymbar.testsystems
 
-ENV["PYTHON"] = ""
-Pkg.build("PyCall")
+
 
 
 @testset "initialize PyMBAR.jl" begin
