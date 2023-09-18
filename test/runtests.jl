@@ -14,7 +14,7 @@ end
 
 function data()
     N = 10000
-    K = 10
+    K = 1
     var = ones(N)
 
     for replica = 2:K
