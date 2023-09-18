@@ -1,8 +1,10 @@
-using Pkg
+using Pkg, Conda
 
 # use Conda.jl python distribution
 ENV["PYTHON"] = ""
 Pkg.build("PyCall")
+Conda.add("statsmodels")
+
 using PyMBAR
 using Test
 using Random, Distributions
