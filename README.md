@@ -50,7 +50,7 @@ function dummy_data()
 end
 
 X, Y, energy = dummy_data()
-g0 = timeseries.statistical_inefficiency_fft(X[1, :])
+g0 = timeseries.statistical_inefficiency(X[1, :])
 ```
 
 
