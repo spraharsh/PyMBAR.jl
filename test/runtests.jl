@@ -1,9 +1,14 @@
+using Pkg
 using PyMBAR
 using Test
 using Random, Distributions
 
 timeseries = PyMBAR.pymbar.timeseries
 testsystems = PyMBAR.pymbar.testsystems
+
+ENV["PYTHON"] = ""
+Pkg.build("PyCall")
+
 
 @testset "initialize PyMBAR.jl" begin
     # Write your tests here.
