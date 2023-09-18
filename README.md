@@ -27,7 +27,7 @@ Below, find a practical example illustrating how to utilize PyMBAR.jl. Note that
 In this example, we generate dummy data and compute the statistical inefficiency.
 
 
-```
+```julia
 using PyMBAR, Random, Distributions
 
 timeseries = PyMBAR.pymbar.timeseries
