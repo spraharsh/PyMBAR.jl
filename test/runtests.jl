@@ -1,6 +1,8 @@
 using PyMBAR
 using Test
 
-@testset "PyMBAR.jl" begin
+@testset "initialize PyMBAR.jl" begin
     # Write your tests here.
+    pymbar = PyMBAR.pymbar
+    @test true
 end
