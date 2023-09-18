@@ -14,6 +14,7 @@ using Pkg
 Pkg.add("PyMBAR")
 ```
 
+Note that this requires that PyCall be able to install pymbar in the python environment. It will automatically be installed if PyCall is configured to use a conda environment. Otherwise, you will need to install pymbar in whatever python environment PyCall is configured to use.
 
 
 ## Usage 
