@@ -19,8 +19,7 @@ Pkg.add("PyMBAR")
 ## Usage 
 
 
-Below, find a practical example illustrating how to utilize PyMBAR.jl. Note that all functionalities available in [pymbar](https://pymbar.readthedocs.io/en/master/) are accessible in a similar manner when using this Julia wrapper.
-
+Below, find a practical example illustrating how to utilize PyMBAR.jl. Note that all functionality available in [pymbar](https://pymbar.readthedocs.io/en/master/) is accessible in a similar manner.
 
 ### Example
 
