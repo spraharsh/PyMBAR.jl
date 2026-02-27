@@ -6,6 +6,7 @@ Pkg.build("PyCall")
 Conda.add("statsmodels")
 
 using PyMBAR
+using PyCall
 using Test
 using Random, Distributions
 
@@ -16,9 +17,8 @@ testsystems = PyMBAR.pymbar.testsystems
 
 
 @testset "initialize PyMBAR.jl" begin
-    # Write your tests here.
-    pymbar = PyMBAR.pymbar
-    @test true
+    @test PyMBAR.pymbar != PyCall.PyNULL()
+    @test pyimport("pymbar") != PyCall.PyNULL()
 end
 
 
